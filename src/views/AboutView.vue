@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <HelloWorld pesan="Welcome to About Page" @update-ajah='munculinTulisan'/>
+    <HelloWorld pesan="Welcome to About Page" @update-ajah='doIncrement'/>
     <p>nilai: {{ nilai }} </p>
   </div>
 </template>
