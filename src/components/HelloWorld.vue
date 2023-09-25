@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ pesan }}</h1>
+    <button @click='increment'>tambah</button>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -34,7 +35,12 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    pesan: String
+  },
+  methods: {
+    increment() {
+      this.$emit('update-ajah')
+    }
   }
 }
 </script>
